@@ -1,6 +1,5 @@
-body {
-  width: 80%;
-  margin: auto;
+.container-fluid {
+  background-color: #EDEEE4;
 }
 
 .album-container {
@@ -14,4 +13,14 @@ body {
 
 img {
   max-width: 250px;
+}
+
+header {
+  text-align: center;
+  background-color: #565843;
+  color: white;
+}
+
+.player {
+  display: none;
 }

@@ -2,7 +2,7 @@ class CreateAlbums < ActiveRecord::Migration
   def change
     create_table :albums do |t|
       t.string   :title
-      t.string   :link
+      t.string   :uri
       t.string   :image
       t.integer   :popularity
       t.references :artists
