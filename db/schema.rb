@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20160618175217) do
 
   create_table "albums", force: :cascade do |t|
     t.string   "title"
-    t.string   "link"
+    t.string   "uri"
     t.string   "image"
     t.integer  "popularity"
     t.integer  "artists_id"
