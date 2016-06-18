@@ -1,0 +1,9 @@
+
+<% @albums.each do |album| %>
+<div class="album-container">
+    <%= image_tag album.image %>
+    <br>
+    <%= link_to album.title, album.link %>
+</div>
+  <% end %>
+</ul>
