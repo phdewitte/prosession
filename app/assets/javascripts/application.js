@@ -1,7 +1,13 @@
 $(document).ready(function() {
   $(".spotify-link").on("click", function(event){
     event.preventDefault();
-    // $(this).closest('img').replaceWith($(this).next())
-    $(this).next().toggle();
+
+  // var uri = $(this).attr('name')
+  // var iframe = `<iframe src="https://embed.spotify.com/?uri=${uri}" width="300" height="380" frameborder="0" allowtransparency="true" class="player"></iframe>`
+
+  // console.log(iframe)
+
+  $('.modal-trigger').leanModal();
+
   });
 });

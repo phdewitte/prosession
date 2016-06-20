@@ -1,9 +1,15 @@
-.container-fluid {
+body {
   background-color: #EDEEE4;
 }
 
+.container-fluid {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .album-container {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   text-align: center;
   width: 20%;
   display: inline-block;
@@ -12,15 +18,28 @@
 }
 
 img {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 header {
   text-align: center;
   background-color: #565843;
   color: white;
+  height: 5%;
+  margin-bottom: 3%
 }
 
-.player {
-  display: none;
+.header-text {
+  margin-top: 0%;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.subheader-text {
+  font-style: condensed-light;
+}
+
+.spotify-link.waves-effect.waves-light.btn {
+  background-color: #959780;
+  height: auto;
 }

@@ -1,10 +1,11 @@
 <div class="container-fluid">
   <% @albums.each do |album| %>
-  <div class="album-container">
+    <div class="album-container z-depth-3">
       <%= image_tag album.image %>
       <br>
-      <%= link_to album.title, "#{album.uri}", class: 'spotify-link' %>
-      <iframe src="https://embed.spotify.com/?uri=<%= album.uri %>" width="300" height="380" frameborder="0" allowtransparency="true" class="player"></iframe>
-  </div>
+      <button data-target="player-modal" class="spotify-link waves-effect waves-light btn modal-trigger" name="<%= album.uri %>"><%= album.title %></button>
+      <!-- link_to album.title, "#{album.uri}", class: 'spotify-link waves-effect waves-light btn' -->
+    <%= render :partial => 'modal', :locals => {:album => album} %>
+    </div>
   <% end %>
 </div>
